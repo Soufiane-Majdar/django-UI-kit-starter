@@ -1,0 +1,47 @@
+ {% extends "home/base.html" %}{% load static %} {% block content %}
+<!-- search section -->
+<div class="section section-md  m-2">
+    <div class="card-body mt-5 px-5 py-5 text-center text-md-left">
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <label for="exampleInputIconLeft">Location</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1"><span class="bi bi-pin-map"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
+                        <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                      </svg></span></span>
+                    <input type="text" class="form-control" id="exampleInputIconLeft" placeholder="Where are you going?" aria-label="Search" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="col-auto">
+                <label class="h6" for="exampleInputDate2">From</label>
+                <div class="form-group">
+                    <div class="input-group input-group-border">
+                        <span class="input-group-text" id="basic-addonDate2"><span class="fas far fa-calendar-alt"></span></span>
+                        <input class="form-control datepicker-input" data-datepicker="" id="exampleInputDate2" placeholder="Start date" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="form-group">
+                    <label class="h6" for="exampleInputDate3">To</label>
+                    <div class="input-group input-group-border">
+                        <span class="input-group-text" id="basic-addonDate3"><span class="fas far fa-calendar-alt"></span></span>
+                        <input class="form-control datepicker-input" data-datepicker="" id="exampleInputDate3" placeholder="End date" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-auto  mt-4 text-md-right">
+                <a href="#" class="btn btn-primary">
+                    <span class="me-1">
+                        <span class="fas fa-search"></span>
+                    </span>
+                    Search
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end search section -->
+
+    {% endblock content %}
